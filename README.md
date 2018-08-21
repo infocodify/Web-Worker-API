@@ -28,3 +28,9 @@ Follow the Steps:
 ```
 
 2.  Create the JavaScript Worker to respond back
+```html
+onmessage = function (e) {
+    var areaCode = e.data.areaCode;
+    postMessage("Area Code : " + areaCode);
+}
+```
